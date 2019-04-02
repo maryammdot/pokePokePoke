@@ -1,10 +1,17 @@
 {
-  "extends": ["eslint:recommended", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "prettier/react",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
   "env": {
     "browser": true,
     "es6": true,
     "node": true
   },
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -12,7 +19,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier"],
+  "plugins": ["react", "prettier", "jsx-a11y"],
   "globals": {
     "React": true
   },
