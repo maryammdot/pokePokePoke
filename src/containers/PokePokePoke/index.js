@@ -1,7 +1,16 @@
 import React from 'react';
+import PokedexScreen from '../PokedexScreen';
+
+import { Wrapper, Pokedex } from './styles';
 
 const pokePokePoke = () => {
-  return <div>Hello World</div>;
+  return (
+    <Wrapper>
+      <Pokedex>
+        <PokedexScreen />
+      </Pokedex>
+    </Wrapper>
+  );
 };
 
 export default pokePokePoke;
